@@ -1,0 +1,54 @@
+{
+    "configurations": [
+        {
+            "name": "Python: Django",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/manage.py",
+            "args": [
+                "runserver_plus",
+            ],
+            "django": true
+        },
+        {
+            "name": "Makemigrations",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/manage.py",
+            "args": [
+                "makemigrations",
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Migrate",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/manage.py",
+            "args": [
+                "migrate",
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Shel plus",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/manage.py",
+            "args": [
+                "shell_plus",
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "iShell",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/manage.py",
+            "args": [
+                "shell -i ipython",
+            ],
+            "console": "integratedTerminal"
+        },
+    ]
+}

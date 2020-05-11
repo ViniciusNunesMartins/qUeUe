@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue index</title>
+</head>
+<body>
+    <h1>{{ sessionid }}</h1>
+    <form action="{% url 'member_create' %}" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="ui primary button">Enter</button>
+    </form>
+</body>
+</html>
